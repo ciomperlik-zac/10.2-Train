@@ -2,7 +2,7 @@ import java.awt.*;
 import java.util.ArrayList;
 
 public class Train {
-    private int x, y;
+    private final int x, y;
     private final ArrayList<RailCar> cars;
 
     public Train(int x, int y) {
