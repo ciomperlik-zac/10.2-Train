@@ -1,18 +1,18 @@
-import javax.swing.*;
-import java.awt.*;              
+import java.awt.*;
 
 public class RailCar {
-    private int x, y;
+    protected final Color color;
 
-    public RailCar(int x, int y) {
-        this.x = x;
-        this.y = y;
+    public RailCar(Color color) {
+        this.color = color;
     }
 
-    public void drawCar(Graphics g) {
-        g.drawOval(x + 5, y + 50, 20, 20);
-        g.drawOval(x + 75, y + 50, 20, 20);
+    public void drawCar(Graphics g, int x, int y) {
+        g.setColor(Color.BLACK);
 
-        
+        g.fillOval(x + 5, y + 60, 40, 40);
+        g.fillOval(x + 85, y + 60, 40, 40);
+
+        g.fillRect(x - 20, y + 55, 20, 5);
     }
 }
