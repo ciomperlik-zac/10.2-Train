@@ -12,7 +12,7 @@ public class Display extends JPanel {
 		super.paintComponent(g); // satisfies the parent class' requirements.
 		setBackground(Color.WHITE);
 
-		Train train = new Train(100, 50);
+		Train train = new Train(100, 100);
 
 		train.addCar(CarType.LOCOMOTIVE, Color.BLUE);
 		train.addCar(CarType.PASSENGER, Color.GRAY);
