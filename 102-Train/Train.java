@@ -39,12 +39,8 @@ public class Train {
     }
 
     public void drawCars(Graphics g) {
-        int drawX = x;
-
-        for (RailCar car : cars) {
-            car.drawCar(g, drawX, y);
-
-            drawX += 150;
+        for (int i = 0; i < cars.size(); i++) {
+            cars.get(i).drawCar(g, x + i * 150, y);
         }
     }
 }
