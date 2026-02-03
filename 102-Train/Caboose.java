@@ -8,9 +8,7 @@ public class Caboose extends RailCar {
 
     @Override
     public void drawCar(Graphics g, int x, int y) {
-        // Main car
-        g.setColor(color);
-        g.fillRect(x, y, 130, 80);
+        super.drawCar(g, x, y);
 
         // Roof
         g.fillRect(x + 20, y - 20, 90, 20);
@@ -21,7 +19,5 @@ public class Caboose extends RailCar {
         g.setColor(Color.WHITE);
         g.fillRect(x + 25, y + 20, 25, 25);
         g.fillRect(x + 80, y + 20, 25, 25);
-
-        super.drawCar(g, x, y);
     }
 }

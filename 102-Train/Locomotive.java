@@ -8,9 +8,7 @@ public class Locomotive extends RailCar {
 
     @Override
     public void drawCar(Graphics g, int x, int y) {
-        // Main car
-        g.setColor(color);
-        g.fillRect(x, y, 130, 80);
+        super.drawCar(g, x, y);
 
         g.setColor(Color.BLACK);
 
@@ -25,7 +23,5 @@ public class Locomotive extends RailCar {
         // Window
         g.setColor(Color.WHITE);
         g.fillRect(x + 10, y + 20, 26, 25);
-
-        super.drawCar(g, x, y);
     }
 }

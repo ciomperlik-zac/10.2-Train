@@ -8,11 +8,7 @@ public class FreightCar extends RailCar {
 
     @Override
     public void drawCar(Graphics g, int x, int y) {
-        // Main car
-        g.setColor(color);
-        g.fillRect(x, y, 130, 80);
-
-        g.setColor(Color.BLACK);
+        super.drawCar(g, x, y);
 
         // Border
         g.drawRect(x + 25, y + 7, 80, 50);
@@ -31,7 +27,5 @@ public class FreightCar extends RailCar {
         // Handles
         g.fillRect(x + 57, y + 27, 5, 10);
         g.fillRect(x + 69, y + 27, 5, 10);
-
-        super.drawCar(g, x, y);
     }
 }
